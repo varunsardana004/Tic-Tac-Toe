@@ -8,7 +8,7 @@ b2.classList.add("win");
 b3.classList.add("win");
 turn.innerHTML = b1.innerHTML + " Won Congrat";
 turn.style.fontSize = "40px";
-document.querySelector('.box').style.pointerEvents = "none";
+document.querySelectorAll('.box').forEach(box => { box.style.pointerEvents = "none" });
 }
 
 function getWinner(){
