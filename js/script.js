@@ -8,6 +8,9 @@ b2.classList.add("win");
 b3.classList.add("win");
 turn.innerHTML = b1.innerHTML + " Won Congrat";
 turn.style.fontSize = "40px";
+//Disabled all click events on box divs after the game ends.
+document.querySelectorAll('.box').forEach(box => { box.style.pointerEvents = "none" });
+
 }
 
 function getWinner(){
